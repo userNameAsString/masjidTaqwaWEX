@@ -69,11 +69,11 @@ button:hover{
     cursor: pointer;
 }
 .titleBox{
-    background-color: #041425;
+    background-color: #041424;
     width:100%;
     margin:none;
-    height:300%;
-    font-size: 300%;
+    height:100%;
+    font-size: 200%;
 }
 .endPageButton{
     transition: 0.3s;
