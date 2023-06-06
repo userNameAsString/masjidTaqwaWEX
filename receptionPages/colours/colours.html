@@ -1,1 +1,144 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <div class = "title">  
+        <u><h1>Colours </h1></u>
+        <br>
+    </div>
+    <p class="subtitle" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+    <table >
+        <tr>
+            <th class="td3">Image</th>
+            <th class="td3">Arabic</th>
+            <th class="td3">English</th>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/redA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/redE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/red.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(0)">اَحْمَر</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(1)">Red</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/pinkA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/pinkE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/pink.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(2)">وَرْدِىْ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(3)">Pink </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/greenA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/greenE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/green.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(4)">اَخْضَر</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(5)">Green</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/purpleA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/purpleE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/purple.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(6)">بَنَفْسِجِى</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(7)">Purple</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/orangeA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/orangeE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/orange.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(8)">بُرْتُقَالِي</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(9)">Orange </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/brownA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/brownE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/brown.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(10)">بُنِّي</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(11)">Brown </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/yellowA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/yellowE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;padding-top: 3%;padding-bottom: 2%;"><img src="images/yellow.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(12)">اَصْفَر</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(13)">Yellow </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/blackA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/blackE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/black.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(14)">اَسْوَد</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(15)">Black </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/whiteA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/whiteE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;padding-top: 3%;padding-bottom: 2%;"><img src="images/white.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(16)">اَبْيَض</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(17)">White </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/blueA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/blueE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/blue.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(18)">اَزْرَق</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(19)">Blue </button></td>
+        </tr>
+    </table>
+    <a href="/receptionPages/islamicMonths/islamicMonths.html">
+        <button class="endPageButton3" style="margin-left: 20%;">Back</button></a>
+    <a href="/index.html">
+    <button class="endPageButton3" >Home</button></a>
+    <a href="/receptionPages/numbers/numbers.html">
+        <button class="endPageButton3">Next</button></a>
+    <script src="/script.js"></script>
+</body>
+</html>
