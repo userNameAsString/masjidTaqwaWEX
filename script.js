@@ -40,7 +40,7 @@ function mobileMode() {
     }
     for (let i = 0; i < document.getElementsByClassName("th3").length ; i++){
         document.getElementsByClassName("th3")[i].style.width = "30%";
-        document.getElementsByClassName("th3")[i].style.fontSize = "300%";
+        document.getElementsByClassName("th3")[i].style.fontSize = "100%";
     }
     for (let i = 0; i < document.getElementsByClassName("endPageButton2").length ; i++){
         document.getElementsByClassName("endPageButton2")[i].style.width = "48.2%";
