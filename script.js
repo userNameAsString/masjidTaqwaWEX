@@ -11,12 +11,18 @@ function mobileMode() {
     for (let i = 0; i < document.getElementsByClassName("selector").length ; i++){
         document.getElementsByClassName("selector")[i].style.width = "10%";
         document.getElementsByClassName("selector")[i].style.height = "300%";
-        document.getElementsByClassName("selector")[i].style.fontSize = "125%";
+        document.getElementsByClassName("selector")[i].style.fontSize = "105%";
+        document.getElementsByClassName("selector")[i].style.padding = "5px";
+        document.getElementsByClassName("selector")[i].style.paddingBottom = "0px";
+        document.getElementsByClassName("selector")[i].style.paddingTop = "10px";
     }
     if (document.getElementById("selectorOn")!= null){
         document.getElementById("selectorOn").style.width = "10%";
         document.getElementById("selectorOn").style.height = "300%";
-        document.getElementById("selectorOn").style.fontSize = "125%";
+        document.getElementById("selectorOn").style.fontSize = "105%";
+        document.getElementById("selectorOn").style.padding = "5px";
+        document.getElementById("selectorOn").style.paddingBottom = "0px";
+        document.getElementById("selectorOn").style.paddingTop = "10px";
     }
     if (document.getElementsByTagName("h1")[0]!= null){
         document.getElementsByTagName("h1")[0].style.fontSize = "90px";
@@ -27,6 +33,7 @@ function mobileMode() {
         document.getElementsByClassName("subtitle")[i].style.fontSize = "200%";
     }
     document.getElementsByTagName("body")[0].style.marginTop = "0px";
+    document.getElementsByTagName("body")[0].style.backgroundSize = "40%";
     for (let i = 0; i < document.getElementsByClassName("td3").length ; i++){
         document.getElementsByClassName("td3")[i].style.width = "30%";
         document.getElementsByClassName("td3")[i].style.fontSize = "100%";
@@ -53,7 +60,7 @@ function mobileMode() {
         document.getElementsByClassName("th2")[i].style.fontSize = "100%";
     }
     for (let i = 0; i < document.getElementsByClassName("endPageButton3").length ; i++){
-        document.getElementsByClassName("endPageButton3")[i].style.width = "31.4%";
+        document.getElementsByClassName("endPageButton3")[i].style.width = "31.5%";
         document.getElementsByClassName("endPageButton3")[i].style.marginLeft = "0.2%";
         document.getElementsByClassName("endPageButton3")[i].style.fontSize = "200%";
         document.getElementsByClassName("endPageButton3")[i].style.padding = "0%";
