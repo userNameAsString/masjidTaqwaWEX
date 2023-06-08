@@ -36,11 +36,11 @@ function mobileMode() {
     document.getElementsByTagName("body")[0].style.backgroundSize = "40%";
     for (let i = 0; i < document.getElementsByClassName("td3").length ; i++){
         document.getElementsByClassName("td3")[i].style.width = "30%";
-        document.getElementsByClassName("td3")[i].style.fontSize = "90%";
+        document.getElementsByClassName("td3")[i].style.fontSize = "85%";
     }
     for (let i = 0; i < document.getElementsByClassName("th3").length ; i++){
         document.getElementsByClassName("th3")[i].style.width = "30%";
-        document.getElementsByClassName("th3")[i].style.fontSize = "90%";
+        document.getElementsByClassName("th3")[i].style.fontSize = "85%";
     }
     for (let i = 0; i < document.getElementsByClassName("endPageButton2").length ; i++){
         document.getElementsByClassName("endPageButton2")[i].style.width = "48.2%";
