@@ -25,7 +25,7 @@ function mobileMode() {
         document.getElementById("selectorOn").style.paddingTop = "10px";
     }
     if (document.getElementsByTagName("h1")[0]!= null){
-        document.getElementsByTagName("h1")[0].style.fontSize = "90px";
+        document.getElementsByTagName("h1")[0].style.fontSize = "70px";
         document.getElementsByTagName("h1")[0].style.marginBottom = "0px";
     }
     for (let i = 0; i < document.getElementsByClassName("subtitle").length ; i++){
