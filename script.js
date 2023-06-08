@@ -36,12 +36,13 @@ function mobileMode() {
         document.getElementsByClassName("th3")[i].style.fontSize = "300%";
     }
     for (let i = 0; i < document.getElementsByClassName("endPageButton2").length ; i++){
-        document.getElementsByClassName("endPageButton2")[i].style.width = "41.7%";
-        document.getElementsByClassName("endPageButton2")[i].style.marginLeft = "5%";
+        document.getElementsByClassName("endPageButton2")[i].style.width = "48.7%";
+        document.getElementsByClassName("endPageButton2")[i].style.marginLeft = "0.2%";
         document.getElementsByClassName("endPageButton2")[i].style.fontSize = "200%";
         document.getElementsByClassName("endPageButton2")[i].style.textAlign = "center";
         document.getElementsByClassName("endPageButton2")[i].style.verticalAlign = "middle";
         document.getElementsByClassName("endPageButton2")[i].style.height = "100px";
+        document.getElementsByClassName("endPageButton2")[i].style.backgroundColor = "#05203b";
     }
     for (let i = 0; i < document.getElementsByClassName("td2").length ; i++){
         document.getElementsByClassName("td2")[i].style.width = "47%";
@@ -52,17 +53,22 @@ function mobileMode() {
         document.getElementsByClassName("th2")[i].style.fontSize = "100%";
     }
     for (let i = 0; i < document.getElementsByClassName("endPageButton3").length ; i++){
-        document.getElementsByClassName("endPageButton3")[i].style.width = "25.7%";
-        document.getElementsByClassName("endPageButton3")[i].style.marginLeft = "5%";
+        document.getElementsByClassName("endPageButton3")[i].style.width = "32%";
+        document.getElementsByClassName("endPageButton3")[i].style.marginLeft = "0.2%";
         document.getElementsByClassName("endPageButton3")[i].style.fontSize = "200%";
         document.getElementsByClassName("endPageButton3")[i].style.padding = "0%";
         document.getElementsByClassName("endPageButton3")[i].style.textAlign = "center";
         document.getElementsByClassName("endPageButton3")[i].style.verticalAlign = "middle";
         document.getElementsByClassName("endPageButton3")[i].style.height = "100px";
+        document.getElementsByClassName("endPageButton3")[i].style.backgroundColor = "#05203b";
+    }
+    if (document.getElementsByTagName("table")[0]!= null){
+        document.getElementsByTagName("table")[0].style.margin = "0px";
+        document.getElementsByTagName("table")[0].style.width = "100%";
     }
 }
 console.log("Is the device considered mobile: " + isMobile)
-if (isMobile == true) {
+if (isMobile != true) {
    console.log("Mobile mode activated");
    mobileMode();
 }
