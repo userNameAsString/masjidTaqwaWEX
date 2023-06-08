@@ -62,7 +62,7 @@ function mobileMode() {
     }
 }
 console.log("Is the device considered mobile: " + isMobile)
-if (isMobile != true) {
+if (isMobile == true) {
    console.log("Mobile mode activated");
    mobileMode();
 }
