@@ -53,7 +53,7 @@ function mobileMode() {
         document.getElementsByClassName("th2")[i].style.fontSize = "100%";
     }
     for (let i = 0; i < document.getElementsByClassName("endPageButton3").length ; i++){
-        document.getElementsByClassName("endPageButton3")[i].style.width = "31.5%";
+        document.getElementsByClassName("endPageButton3")[i].style.width = "31.8%";
         document.getElementsByClassName("endPageButton3")[i].style.marginLeft = "0.2%";
         document.getElementsByClassName("endPageButton3")[i].style.fontSize = "200%";
         document.getElementsByClassName("endPageButton3")[i].style.padding = "0%";
