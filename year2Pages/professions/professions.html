@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <div class = "title">  
+        <u><h1>Professions </h1></u>
+        <br>
+    </div>
+    <p class="subtitle" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+    <table >
+        <tr>
+            <th class="td3">Image</th>
+            <th class="td3">Arabic</th>
+            <th class="td3">English</th>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/pilotA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/pilotE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/pilot.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(0)">طَيَّار</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(1)">Pilot </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/cookA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/cookE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/cook.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(2)">طَبَّاخ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(3)">Cook</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/engineerA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/engineerE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/engineer.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(4)">مُهَنْدِس</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(5)">Engineer</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/policeA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/policeE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/police.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(6)">الشُّرْطِىُّ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(7)">Police</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/farmerA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/farmerE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/farmer.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(8)">مَزَارِع</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(9)">Farmer </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/nurseA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/nurseE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/nurse.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(10)">مُمَرِّضَةٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(11)">Nurse </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/teacherA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/teacherE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;padding-top: 3%;padding-bottom: 2%;"><img src="images/teacher.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(12)">مُدَرِّس</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(13)">Teacher</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/barberA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/barberE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/barber.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(14)">حَلَّاق</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(15)">Barber</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/doctorA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/doctorE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;padding-top: 3%;padding-bottom: 2%;"><img src="images/doctor.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(16)">طَبِيْب</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(17)">Doctor</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/journalistA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/journalistE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/journalist.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(18)">صَحَافِىْ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(19)">Journalist </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/accountantA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/accountantE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/accountant.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(20)">مُحَاسِب</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(21)">Accountant </button></td>
+        </tr>
+    </table>
+    <a href="/year2Pages/meetingAndGreeting/meetingAndGreeting.html">
+        <button class="endPageButton3" style="margin-left: 20%;">Back</button></a>
+    <a href="/year2Pages/index2.html">
+    <button class="endPageButton3" >Home</button></a>
+    <a href="/year2Pages/theWorld/theWorld.html">
+        <button class="endPageButton3">Next</button></a>
+    <script src="/script.js"></script>
+</body>
+</html>
