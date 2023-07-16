@@ -1,4 +1,4 @@
-const isMobile = typeof screen.orientation == 'undefined';
+const isMobile = /android.+mobile|ip(hone|[oa]d)/i.test(navigator.userAgent);
 function playAudio(number) {
      var audioFiles = document.getElementsByClassName("noiseButton");
     audioFiles[number].play();
