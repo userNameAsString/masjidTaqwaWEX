@@ -1,4 +1,6 @@
 const isMobile = /android.+mobile|ip(hone|[oa]d)/i.test(navigator.userAgent);
+const userAgent = navigator.userAgent.toLowerCase(); 
+const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(userAgent);
 function playAudio(number) {
      var audioFiles = document.getElementsByClassName("noiseButton");
     audioFiles[number].play();
@@ -71,11 +73,12 @@ function mobileMode() {
     }
     if (document.getElementsByTagName("table")[0]!= null){
         document.getElementsByTagName("table")[0].style.margin = "0px";
-        document.getElementsByTagName("table")[0].style.width = "100%";
+        document.getElementsByTagName("table")[0].style.width = "100%";              
     }
 }
 console.log("Is the device considered mobile: " + isMobile)
-if (isMobile == true) {
+console.log("Is the device a tablet: " + isTablet)
+if (isMobile == true || isTablet == true ) {
    console.log("Mobile mode activated");
    mobileMode();
 }
