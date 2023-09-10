@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <div class = "title">  
+        <u><h1>Toys </h1></u>
+        <br>
+    </div>
+    <p class="subtitle" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+    <table >
+        <tr>
+            <th class="td3">Image</th>
+            <th class="td3">Arabic</th>
+            <th class="td3">English</th>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/TrainA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/TrainE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Train.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(0)">قِطَارٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(1)">Train </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/BallA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/BallE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Ball.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(2)">كُرَةٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(3)">Ball</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/CarA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/CarE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Car.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(4)">سَيَّارَةٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(5)">Car</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/BusA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/BusE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Bus.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(6)">حَافِلَةٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(7)">Bus</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/DollA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/DollE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Doll.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(8)">عَرُوْسَةٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(9)">Doll </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/bearA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/bearE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/bear.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(10)">دُبٌّ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(11)">Teddy bear </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/PlaneA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/PlaneE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;padding-top: 3%;padding-bottom: 2%;"><img src="images/Plane.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(12)">طَائِرَةٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(13)">Plane</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/batA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/batE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/bat.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(14)">مِضْرَبٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(15)">Bat</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/BicycleA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/BicycleE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;padding-top: 3%;padding-bottom: 2%;"><img src="images/Bicycle.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(16)">دَرَّاجَةٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(17)">Bicycle</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/BoatA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/BoatE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Boat.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(18)">زَوْرَقٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(19)">Boat </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/BookA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/BookE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Book.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(20)">كِتَابٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(21)">Book </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/PenA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/PenE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Pen.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(22)">قَلَمٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(23)">Pen </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/FootballA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/FootballE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Football.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(24)">كُرَّةُ الْقَدَم</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(25)">Football </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/CricketA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/CricketE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Cricket.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(26)">كِرِيْكِتٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(27)">Cricket </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/topA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/topE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/top.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(28)">دُوَّامَةٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(29)">Spinning top </button></td>
+        </tr>
+    </table>
+    <a href="/year2Pages/theWorld/theWorld.html">
+        <button class="endPageButton3" style="margin-left: 20%;">Back</button></a>
+    <a href="/year2Pages/index2.html">
+    <button class="endPageButton3" >Home</button></a>
+    <a href="/year2Pages/face/face.html">
+        <button class="endPageButton3">Next</button></a>
+    <script src="/script.js"></script>
+</body>
+</html>
