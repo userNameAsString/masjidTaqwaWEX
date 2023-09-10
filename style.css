@@ -141,6 +141,7 @@ table{
 .th3, .td3 {
     width: 33.3%;
     font-size: 500%;
+    padding: 1% 0px;
 }
 .th2, .td2 {
     padding: 4% 0px;

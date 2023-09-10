@@ -9,7 +9,7 @@ function mobileMode() {
     if (document.getElementById("mainTitle") !=null){ 
     document.getElementById("mainTitle").style.fontSize = "130%";
     document.getElementById("mainTitle").style.wordSpacing = "3000px";
-    }
+    }   
     for (let i = 0; i < document.getElementsByClassName("selector").length ; i++){
         document.getElementsByClassName("selector")[i].style.width = "10%";
         document.getElementsByClassName("selector")[i].style.height = "300%";
@@ -79,6 +79,6 @@ function mobileMode() {
 console.log("Is the device considered mobile: " + isMobile)
 console.log("Is the device a tablet: " + isTablet)
 if (isMobile == true || isTablet == true ) {
-   console.log("Mobile mode activated");
+   console.log("Mobile/Tablet mode activated");
    mobileMode();
 }
