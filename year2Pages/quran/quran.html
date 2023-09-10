@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <div class = "title">  
+        <u><h1>Quranic Vocabulary </h1></u>
+        <br>
+    </div>
+    <p class="subtitle" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+    <table >
+        <tr>
+            <th class="td2">Arabic</th>
+            <th class="td2">English</th>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/knowledgeA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/knowledgeE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(0)">عِلم</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(1)">Knowledge</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/ActionsA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/ActionsE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(2)"> عَمَل</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(3)">Actions</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/AdviceA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/AdviceE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(4)">مَوْعِظَة</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(5)">Advice</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/ReminderA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/ReminderE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(6)"> ذِكْرى</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(7)">Reminder</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/BenefitA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/BenefitE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(8)">نَفْع</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(9)">Benefit</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/MessengerA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/MessengerE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(10)"> رَسُول</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(11)">Messenger</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/ReligionA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/ReligionE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(12)">دِيْن</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(13)">Religion</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/FavoursA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/FavoursE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(14)"> آلاء</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(15)">Favours</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/AuthorityA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/AuthorityE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(16)">سُلْطَان</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(17)">Authority</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/GraceA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/GraceE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(18)"> فَضْل</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(19)">Grace</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/BlessingsA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/BlessingsE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(20)">نِعْمَة</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(21)">Blessings</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/DrinkA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/drinkE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(22)"> شَرَاب</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(23)">Drink</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/eyeA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/eyeE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(24)">عَيْن</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(25)">Eye/Fountain</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/LordA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/LordE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(26)"> رب \ اِله</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(27)">Lord</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/OneA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/OneE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(28)">اَحَدْ</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(29)">One</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/HouseA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/HouseE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(30)"> بَيْت\ دَار \ مَكَان</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(31)">House</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/WorldA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/WorldE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(32)">دُنْيَا</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(33)">World</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/PathA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/PathE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(34)"> سَبِيْل \ صِرَاط</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(35)">Path</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/WealthA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/WealthE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(36)">ماَل\ مَتَاع</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(37)">Wealth</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/GardenA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/GardenE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(38)">حَدَائِق</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(39)">Garden</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/TongueA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/TongueE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(40)">لِسَان</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(41)">Tongue</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/MouthA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/MouthE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(42)"> فَمٌ</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(43)">Mouth</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/FireA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/FireE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(44)">نَار</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(45)">Fire</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/SuccessA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/SuccessE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(46)"> فَوز</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(47)">Success</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/ReckoningA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/ReckoningE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(48)">حِسَاب  </button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(49)">Reckoning</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/TruthA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/TruthE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(50)"> حَق</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(51)">Truth/Right</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/ForbearanceA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/ForbearanceE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(52)">تَقْوى</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(53)">Forbearance </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/WisdomA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/WisdomE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(54)"> حِكْمَة</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(55)">Wisdom</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/LightA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/LightE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(56)">نُور</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(57)">Light</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/RewardA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/RewardE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(58)"> جَزَاء</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(59)">Reward</button></td>
+        </tr>
+    </table>
+    <a href="/year2Pages/rooms/rooms.html">
+        <button class="endPageButton2" style="margin-left: 20%;">Back</button></a>
+    <a href="/year2Pages/index2.html">
+    <button class="endPageButton2" >Home</button></a>
+    <script src="/script.js"></script>
+</body>
+</html>
