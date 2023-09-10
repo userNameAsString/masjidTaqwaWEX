@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <div class = "title">  
+        <u><h1>Immediate Family </h1></u>
+        <br>
+    </div>
+    <p class="subtitle" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+    <table >
+        <tr>
+            <th class="td2">Arabic</th>
+            <th class="td2">English</th>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/motherA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/motherE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(0)">اُمٌّ</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(1)">Mother</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/fatherA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/fatherE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(2)"> اَبٌ</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(3)">Father</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/brotherA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/brotherE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(4)">اَخٌ</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(5)">Brother</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/sisterA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/sisterE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(6)"> اُخْتٌ</button></td>
+            <td class="td2"><button class="noise" title="Click me!" onclick="playAudio(7)">Sister</button></td>
+        </tr>
+    </table>
+    <a href="/year2Pages/phrases/phrases.html">
+        <button class="endPageButton3" style="margin-left: 20%;">Back</button></a>
+    <a href="/year2Pages/index2.html">
+    <button class="endPageButton3" >Home</button></a>
+    <a href="/year2Pages/rooms/rooms.html">
+        <button class="endPageButton3">Next</button></a>
+    <script src="/script.js"></script>
+</body>
+</html>
