@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <div class = "title">  
+        <u><h1>The World </h1></u>
+        <br>
+    </div>
+    <p class="subtitle" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+    <table >
+        <tr>
+            <th class="td3">Image</th>
+            <th class="td3">Arabic</th>
+            <th class="td3">English</th>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/TreeA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/TreeE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Tree.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(0)">شَجَرٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(1)">Tree </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/SkyA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/SkyE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Sky.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(2)">سَمَاءٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(3)">Sky</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/EarthA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/EarthE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Earth.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(4)">اَرْضٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(5)">Earth</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/SunA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/SunE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Sun.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(6)">شَمْسٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(7)">Sun</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/MoonA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/MoonE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Moon.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(8)">قَمَرٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(9)">Moon </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/MountainA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/MountainE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Mountain.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(10)">جَبَلٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(11)">Mountain </button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/OceanA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/OceanE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;padding-top: 3%;padding-bottom: 2%;"><img src="images/Ocean.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(12)">بَحْرٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(13)">Ocean</button></td>
+        </tr>
+        <tr>
+            <audio class="noiseButton">
+                <source src="audio/StreamA.mp3" type="audio/mpeg" >
+            </audio>
+            <audio class="noiseButton">
+                <source src="audio/StreamE.mp3" type="audio/mpeg" >
+            </audio>
+            <td class="td3" style="padding:none;"><img src="images/Stream.png"></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(14)">نَهرٌ</button></td>
+            <td class="td3"><button class="noise" title="Click me!" onclick="playAudio(15)">Stream</button></td>
+        </tr>
+    </table>
+    <a href="/year2Pages/professions/professions.html">
+        <button class="endPageButton3" style="margin-left: 20%;">Back</button></a>
+    <a href="/year2Pages/index2.html">
+    <button class="endPageButton3" >Home</button></a>
+    <a href="/year2Pages/toys/toys.html">
+        <button class="endPageButton3">Next</button></a>
+    <script src="/script.js"></script>
+</body>
+</html>
