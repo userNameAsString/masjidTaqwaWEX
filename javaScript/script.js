@@ -83,7 +83,7 @@ function showPages(year) {
         ],
         year5: [
           { name: 'Duroos Lesson 4', url: 'year5Pages/duroos4/duroos4.html' },
-          { name: 'Duroos Lesson 5', url: 'year5Pages/duroos,5/duroos5.html' },
+          { name: 'Duroos Lesson 5', url: 'year5Pages/duroos5/duroos5.html' },
           { name: 'Duroos Lesson 6', url: 'year5Pages/duroos6/duroos6.html' },
           { name: 'Adjectives', url: 'year5Pages/adjectives/adjectives.html' },
           { name: 'Quran', url: 'year5Pages/quran/quran.html' },
