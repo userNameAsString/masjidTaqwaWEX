@@ -69,8 +69,8 @@ let touchstartX = 0
 let touchendX = 0
     
 function checkDirection() {
-  if (touchendX < touchstartX) showNext()
-  if (touchendX > touchstartX) showPrev()
+  if (touchendX + 100 < touchstartX) showNext()
+  if (touchendX > 100 + touchstartX) showPrev()
 }
 
 document.addEventListener('touchstart', e => {
