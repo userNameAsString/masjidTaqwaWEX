@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Quranic Vocabulary</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div id="vocabularyImageContainer" class="imageContainer" style="display: none;">
+                <img id="vocabularyImage" src="" alt="" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()">Knowledge - عِلم (Ilm)</p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'Knowledge', arabic: 'عِلم', transliteration: 'Ilm' },
+            { name: 'Actions', arabic: 'عَمَل', transliteration: 'Amal' },
+            { name: 'Advice', arabic: 'مَوْعِظَة', transliteration: 'Maw\'izhah' },
+            { name: 'Reminder', arabic: 'ذِكْرَى', transliteration: 'Dhikraa' },
+            { name: 'Benefit', arabic: 'نَفْع', transliteration: 'Naf\'a' },
+            { name: 'Messenger', arabic: 'رَسُول', transliteration: 'Rasool' },
+            { name: 'Religion', arabic: 'دِيْن', transliteration: 'Deen' },
+            { name: 'Favours', arabic: 'آلاء', transliteration: 'Aalaa\'a' },
+            { name: 'Authority', arabic: 'سُلْطَان', transliteration: 'Sultaan' },
+            { name: 'Grace', arabic: 'فَضْل', transliteration: 'Fadhl' },
+            { name: 'Blessings', arabic: 'نِعْمَة', transliteration: 'Ni\'mah' },
+            { name: 'Drink', arabic: 'شَرَاب', transliteration: 'Shuraab' },
+            { name: 'Eye/Fountain', arabic: 'عَيْن', transliteration: 'A\'yn' },
+            { name: 'Lord', arabic: 'رَب', transliteration: 'Rabb' },
+            { name: 'One', arabic: 'أَحَد', transliteration: 'Ahad' },
+            { name: 'House', arabic: 'بَيْت', transliteration: 'Bayt' },
+            { name: 'World', arabic: 'دُنْيَا', transliteration: 'Dunyaa' },
+            { name: 'Path', arabic: 'سَبِيل', transliteration: 'Sabeel' },
+            { name: 'Wealth', arabic: 'مَال', transliteration: 'Maal' },
+            { name: 'Garden', arabic: 'حَدَائِق', transliteration: 'Hada\'iq' },
+            { name: 'Tongue', arabic: 'لِسَان', transliteration: 'Lisaan' },
+            { name: 'Mouth', arabic: 'فَمٌ', transliteration: 'Fam' },
+            { name: 'Fire', arabic: 'نَار', transliteration: 'Naar' },
+            { name: 'Success', arabic: 'فَوْز', transliteration: 'Fawz' },
+            { name: 'Reckoning', arabic: 'حِسَاب', transliteration: 'Hisaab' },
+            { name: 'Truth/Right', arabic: 'حَقّ', transliteration: 'Haqq' },
+            { name: 'Forbearance', arabic: 'تَقْوى', transliteration: 'Taqwaa' },
+            { name: 'Wisdom', arabic: 'حِكْمَة', transliteration: 'Hikmah' },
+            { name: 'Light', arabic: 'نُور', transliteration: 'Noor' },
+            { name: 'Reward', arabic: 'جَزَاء', transliteration: 'Jazaa\'a' }
+        ];
+    </script>
+
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year3Pages/year3.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

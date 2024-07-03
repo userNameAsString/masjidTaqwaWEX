@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Duroos Lesson 5</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Duroos Lesson 5 Vocabulary</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div id="vocabularyImageContainer" class="imageContainer" style="display: none;">
+                <img id="vocabularyImage" src="" alt="" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()"></p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'Over there', arabic: 'هُنَاكَ', transliteration: 'Hunaak' },
+            { name: 'Underneath', arabic: 'تَحْتَ', transliteration: 'Taht' },
+            { name: 'Notebook', arabic: 'دَفْتَرٌ', transliteration: 'Daftar' },
+            { name: 'Bag', arabic: 'حَقِيبَةٌ', transliteration: 'Haqeebah' },
+            { name: 'Girl', arabic: 'بِنْتٌ', transliteration: 'Bint' },
+            { name: 'Name', arabic: 'اِسْمٌ', transliteration: 'Ism' },
+            { name: 'Son', arabic: 'اِبْنٌ', transliteration: 'Ibn' },
+            { name: 'Uncle (paternal)', arabic: 'عَمٌّ', transliteration: '\'Am' },
+            { name: 'Messenger', arabic: 'رَسُولٌ', transliteration: 'Rasool' },
+            { name: 'Uncle (maternal)', arabic: 'خَالٌ', transliteration: 'Khaal' },
+            { name: 'Closed', arabic: 'مُغْلَقٌ', transliteration: 'Mughlaq' },
+            { name: 'Minister', arabic: 'وَزِيرٌ', transliteration: 'Wazeer' },
+            { name: 'Street', arabic: 'شَارِعٌ', transliteration: 'Shaari\'' },
+            { name: 'Market', arabic: 'سُوقٌ', transliteration: 'Sooq' },
+            { name: 'I', arabic: 'أَنَا', transliteration: 'Ana' }
+        ];
+    </script>
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year4Pages/year4.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

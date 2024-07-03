@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Duroos Lesson 4</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Duroos Lesson 4 Vocabulary</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div id="vocabularyImageContainer" class="imageContainer" style="display: none;">
+                <img id="vocabularyImage" src="" alt="" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()"></p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'In', arabic: 'فِيْ', transliteration: 'Fee' },
+            { name: 'On', arabic: 'عَلَى', transliteration: 'Alaa' },
+            { name: 'From', arabic: 'مِنْ', transliteration: 'Min' },
+            { name: 'To', arabic: 'إِلَى', transliteration: 'Ilaa' },
+            { name: 'He/it', arabic: 'هُوَ', transliteration: 'Huwa' },
+            { name: 'She/it', arabic: 'هِيَ', transliteration: 'Hiya' },
+            { name: 'Where', arabic: 'أَيْنَ', transliteration: 'Ayn' },
+            { name: 'Bathroom', arabic: 'حَمَّام', transliteration: 'Hammaam' },
+            { name: 'Room', arabic: 'غُرْفَة', transliteration: 'Ghurfah' },
+            { name: 'Watch', arabic: 'سَاعَة', transliteration: 'Saa\'ah' },
+            { name: 'Kitchen', arabic: 'مَطْبَخ', transliteration: 'Matbakh' },
+            { name: 'Toilet', arabic: 'مِرْحَاض', transliteration: 'Mirhaadh' },
+            { name: 'School', arabic: 'مَدْرَسَة',transliteration: 'Madrasah'},
+            { name: 'University', arabic: 'جَامِعَة', transliteration: 'Jaami\'ah' },
+            { name: 'Classroom', arabic: 'فصل', transliteration: 'Fasl' },
+            { name: 'Sun', arabic: 'شمْس', transliteration: 'Shams' },
+            { name: 'Sky', arabic: 'سمَاء', transliteration: 'Samaa\'a' },
+            { name: 'Japan', arabic: 'يَابَان', transliteration: 'Yaabaan' },
+            { name: 'China', arabic: 'صين', transliteration: 'Seen' },
+            { name: 'India', arabic: 'هِنْد', transliteration: 'Hind' },
+            { name: 'Philippines', arabic: 'فِلِبِّين', transliteration: 'Filibbeen' },
+            { name: 'He left', arabic: 'خَرَجَ', transliteration: 'Kharaja' },
+            { name: 'He went', arabic: 'ذَهَبَ', transliteration: 'Dhahaba' },
+            { name: 'Headmaster', arabic: 'مُدِير', transliteration: 'Mudeer' },
+            { name: 'Market', arabic: 'سوق', transliteration: 'Sooq' },
+        ];
+    </script>
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year4Pages/year4.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Questions</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div id="vocabularyImageContainer" class="imageContainer">
+                <img id="vocabularyImage" src="" alt="" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()"></p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+    <script>
+        const vocabulary = [
+            { name: 'What?', arabic: 'مَا؟', transliteration: 'Maa' },
+            { name: 'Who?', arabic: 'مَنْ؟', transliteration: 'Man' },
+            { name: 'When?', arabic: 'مَتَى؟', transliteration: 'Mataa' },
+            { name: 'Where?', arabic: 'أَيْنَ؟', transliteration: 'Ayna' },
+            { name: 'How?', arabic: 'كَيْفَ؟', transliteration: 'Kayfa' },
+            { name: 'How Many?', arabic: 'كَمْ؟', transliteration: 'Kam' },
+            { name: 'Which?', arabic: 'أَيُّ؟', transliteration: 'Ayyu' },
+            { name: 'Wherefrom?', arabic: 'انَّى؟', transliteration: 'Annaa' },
+            { name: 'Is? Am? Are? Do? Have?', arabic: 'هَلْ؟', transliteration: 'Hal' },
+            { name: 'Is? Am? Are? Do? Have?', arabic: 'أَ؟', transliteration: 'A' },
+            { name: 'What?', arabic: 'مَاذَا؟', transliteration: 'Maadhaa' },
+            { name: 'Why?', arabic: 'لِمَ؟', transliteration: 'Lima' },
+            { name: 'Why?', arabic: 'لِمَاذَا؟', transliteration: 'Limaadhaa' },
+            { name: 'If not, why not?', arabic: 'لَوْ لَا', transliteration: 'Law-Laa' }
+        ];
+    </script>
+     
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year6Pages/year6.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

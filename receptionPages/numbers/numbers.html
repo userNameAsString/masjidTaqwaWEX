@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Numbers</h1></u>
+        <br>
+    </div>
+<p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div class="imageContainer" >
+                <img id="vocabularyImage" src="images/one.png" alt="One" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()">One - وَاحِد (Wahid)</p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'One', arabic: 'وَاحِد', transliteration: 'Wahid', image: 'images/one.png' },
+            { name: 'Two', arabic: 'اِثْنَان', transliteration: 'Ithnaan', image: 'images/two.png' },
+            { name: 'Three', arabic: 'ثَلاثَة', transliteration: 'Thalaatha', image: 'images/three.png' },
+            { name: 'Four', arabic: 'اَرْبَعَة', transliteration: 'Arba\'ah', image: 'images/four.png' },
+            { name: 'Five', arabic: 'خَمْسَة', transliteration: 'Khamsah', image: 'images/five.png' },
+            { name: 'Six', arabic: 'سِتَّة', transliteration: 'Sittah', image: 'images/six.png' },
+            { name: 'Seven', arabic: 'سَبْعَة', transliteration: 'Sab\'ah', image: 'images/seven.png' },
+            { name: 'Eight', arabic: 'ثَمَانِيَة', transliteration: 'Thamaaniyah', image: 'images/eight.png' },
+            { name: 'Nine', arabic: 'تِسْعَة', transliteration: 'Tis\'ah', image: 'images/nine.png' },
+            { name: 'Ten', arabic: 'عَشَرَة', transliteration: 'Asharah', image: 'images/ten.png' },
+            { name: 'Eleven', arabic: 'اَحَدَ عَشَرَ', transliteration: 'Ahada Ashar', image: 'images/eleven.png' },
+            { name: 'Twelve', arabic: 'اِثْنَا عَشَرَ', transliteration: 'Ithna Ashar', image: 'images/twelve.png' },
+            { name: 'Twenty', arabic: 'عِشْرُوْن', transliteration: 'Ishroon', image: 'images/twenty.png' },
+            { name: 'Thirty', arabic: 'ثلاثون', transliteration: 'Thalaathoon', image: 'images/thirty.png' },
+            { name: 'Forty', arabic: 'أَرْبَعُوْن', transliteration: 'Arba\'oon', image: 'images/forty.png' },
+            { name: 'Fifty', arabic: 'خَمْسُوْن', transliteration: 'Khamsoon', image: 'images/fifty.png' },
+            { name: 'Sixty', arabic: 'سِتُّوْن', transliteration: 'Sittoon', image: 'images/sixty.png' },
+            { name: 'Seventy', arabic: 'سَبْعُوْن', transliteration: 'Sab\'oon', image: 'images/seventy.png' },
+            { name: 'Eighty', arabic: 'ثَمَانُوْن', transliteration: 'Thamaanun', image: 'images/eighty.png' },
+            { name: 'Ninety', arabic: 'تِسْعُوْن', transliteration: 'Tis\'oon', image: 'images/ninety.png' },
+            { name: 'Hundred', arabic: 'مِئَةٌ', transliteration: 'Mi\'ah', image: 'images/hundred.png' },
+            { name: 'Thousand', arabic: 'اَلْفٌ', transliteration: 'Alf', image: 'images/thousand.png' }
+        ];
+    </script>
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/receptionPages/reception.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Stationery</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div class="imageContainer">
+                <img id="vocabularyImage" src="images/pen.png" alt="Pen" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()">قَلَمٌ - Pen (qalam)</p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'Pen', arabic: 'قَلَمٌ', transliteration: 'qalam', image: 'images/pen.png' },
+            { name: 'Pencil', arabic: 'قَلَمُ رَصَاص', transliteration: 'qalamu rasaas', image: 'images/pencil.png' },
+            { name: 'Book', arabic: 'كِتَابٌ', transliteration: 'kitaab', image: 'images/book.png' },
+            { name: 'Ruler', arabic: 'مِسْطَرَةٌ', transliteration: 'mistarah', image: 'images/ruler.png' },
+            { name: 'Rubber', arabic: 'مِمْحَاةٌ', transliteration: 'mimhaah', image: 'images/rubber.png' },
+            { name: 'Notebook', arabic: 'مُفَكِّرَةٌ', transliteration: 'mufakkirah', image: 'images/notebook.png' },
+            { name: 'Sharpener', arabic: 'مِبْرَاةٌ', transliteration: 'mibraah', image: 'images/sharpener.png' },
+            { name: 'School bag', arabic: 'حَقِيْبَةٌ', transliteration: 'haqeebah', image: 'images/schoolBag.png' },
+            { name: 'Pencil Case', arabic: 'مَقْلَمَةٌ', transliteration: 'maqlamah', image: 'images/pencilCase.png' },
+            { name: 'Paper', arabic: 'وَرَقَةٌ', transliteration: 'waraqah', image: 'images/paper.png' }
+            // Add more stationery items as needed
+        ];
+    </script>
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year1Pages/year1.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Colours</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+            Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div class="imageContainer" >
+                <img id="vocabularyImage" src="images/red.png" alt="Red" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()">Red - اَحْمَر (Ahmar)</p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'Red', arabic: 'اَحْمَر', transliteration: 'Ahmar', image: 'images/red.png' },
+            { name: 'Orange', arabic: 'بُرْتُقَالِي', transliteration: 'Burtuqaalee', image: 'images/orange.png' },
+            { name: 'Yellow', arabic: 'اَصْفَر', transliteration: 'Asfar', image: 'images/yellow.png' },
+            { name: 'Green', arabic: 'اَخْضَر', transliteration: 'Akhdhar', image: 'images/green.png' },
+            { name: 'Blue', arabic: 'اَزْرَق', transliteration: 'Azraq', image: 'images/blue.png' },
+            { name: 'Purple', arabic: 'بَنَفْسِجِى', transliteration: 'Banafsajee', image: 'images/purple.png' },
+            { name: 'Pink', arabic: 'وَرْدِىْ', transliteration: 'Wardee', image: 'images/pink.png' },
+            { name: 'Brown', arabic: 'بُنِّي', transliteration: 'Bunnee', image: 'images/brown.png' },
+            { name: 'Black', arabic: 'اَسْوَد', transliteration: 'Aswad', image: 'images/black.png' },
+            { name: 'White', arabic: 'اَبْيَض', transliteration: 'Abyad', image: 'images/white.png' }
+        ];
+    </script>
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/receptionPages/reception.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

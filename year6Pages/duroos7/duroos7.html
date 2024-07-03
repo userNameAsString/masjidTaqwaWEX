@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Duroos Lesson 7</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Duroos Lesson 7 Vocabulary</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div id="vocabularyImageContainer" class="imageContainer" style="display: none;">
+                <img id="vocabularyImage" src="" alt="" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()"></p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'That (F)', arabic: 'تِلْكَ', transliteration: 'Tilka' },
+            { name: 'Nurse', arabic: 'مُمَرِّضَة', transliteration: 'Mumaridhah' },
+            { name: 'Chicken', arabic: 'دَجَاجَة', transliteration: 'Dajaajah' },
+            { name: 'Duck', arabic: 'بَطَّة', transliteration: 'Battah' },
+            { name: 'Egg', arabic: 'بَيْضَة', transliteration: 'Baydhah' },
+            { name: 'Caller (to prayer)', arabic: 'مُؤَذِّن', transliteration: 'Mu\'adhin' },
+            { name: 'Garden', arabic: 'حَدِيقَة', transliteration: 'Hadeeqah' },
+            { name: 'She-Camel', arabic: 'نَاقَة', transliteration: 'Naaqah' }
+        ];
+    </script>
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year6Pages/year6.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

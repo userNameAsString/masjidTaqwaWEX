@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Duroos Lesson 1</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Duroos Lesson 1 Vocabulary</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div id="vocabularyImageContainer" class="imageContainer" style="display: none;">
+                <img id="vocabularyImage" src="" alt="" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()">House - بيت(Bayt)</p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'House', arabic: 'بيت', transliteration: 'Bayt' },
+            { name: 'Masjid', arabic: 'مسجد'},
+            { name: 'Door', arabic: 'باب', transliteration: 'Baab' },
+            { name: 'Book', arabic: 'كتاب', transliteration: 'Kitaab' },
+            { name: 'Pen', arabic: 'قلم', transliteration: 'Qalam' },
+            { name: 'Key', arabic: 'مفتاح', transliteration: 'Miftaah' },
+            { name: 'Desk', arabic: 'مكتب', transliteration: 'Maktab' },
+            { name: 'Bed', arabic: 'سرير', transliteration: 'Sareer' },
+            { name: 'Chair', arabic: 'كرسي', transliteration: 'Kursee' },
+            { name: 'Shirt', arabic: 'قميص', transliteration: 'Qamees' },
+            { name: 'Star', arabic: 'نجم', transliteration: 'Najm' },
+            { name: 'Doctor', arabic: 'طبيب', transliteration: 'Tabeeb' },
+            { name: 'Boy', arabic: 'ولد', transliteration: 'Walad' },
+            { name: 'Student', arabic: 'طالب', transliteration: 'Taalib' },
+            { name: 'Man', arabic: 'رجل', transliteration: 'Rajul' },
+            { name: 'Businessman', arabic: 'تاجر', transliteration: 'Taajir' },
+            { name: 'Dog', arabic: 'كَلْبٌ', transliteration: 'Kalb' },
+            { name: 'Cat', arabic: 'قِطٌّ', transliteration: 'Qitt' },
+            { name: 'Donkey', arabic: 'حمار', transliteration: 'Himaar' },
+            { name: 'Horse', arabic: 'حِصَان', transliteration: 'Hisaan' },
+            { name: 'Rooster', arabic: 'ديك', transliteration: 'Deek' },
+            { name: 'Teacher', arabic: 'مدرس', transliteration: 'Mudariss' },
+            { name: 'Handkerchief', arabic: 'مِنديل', transliteration: 'Mindeel' }
+        ];
+    </script>
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year3Pages/year3.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

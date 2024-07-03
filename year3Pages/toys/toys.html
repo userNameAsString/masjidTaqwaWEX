@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Toys</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div id="vocabularyImageContainer" class="imageContainer">
+                <img id="vocabularyImage" src="images/train.png" alt="Train" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()">Train - قِطَارٌ (Qitar)</p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'Train', arabic: 'قِطَارٌ', transliteration: 'Qitaar', image: 'images/train.png' },
+            { name: 'Ball', arabic: 'كُرَةٌ', transliteration: 'Kurah', image: 'images/ball.png' },
+            { name: 'Car', arabic: 'سَيَّارَةٌ', transliteration: 'Sayyaarah', image: 'images/car.png' },
+            { name: 'Bus', arabic: 'حَافِلَةٌ', transliteration: 'Hafilah', image: 'images/bus.png' },
+            { name: 'Doll', arabic: 'عَرُوْسَةٌ', transliteration: 'Aroosah', image: 'images/doll.png' },
+            { name: 'Teddy bear', arabic: 'دُبٌّ', transliteration: 'Dubb', image: 'images/teddyBear.png' },
+            { name: 'Plane', arabic: 'طَائِرَةٌ', transliteration: 'Taa\'irah', image: 'images/plane.png' },
+            { name: 'Bat', arabic: 'مِضْرَبٌ', transliteration: 'Midhrab', image: 'images/bat.png' },
+            { name: 'Bicycle', arabic: 'دَرَّاجَةٌ', transliteration: 'Darraajah', image: 'images/bicycle.png' },
+            { name: 'Boat', arabic: 'زَوْرَقٌ', transliteration: 'Zawraq', image: 'images/boat.png' },
+            { name: 'Book', arabic: 'كِتَابٌ', transliteration: 'Kitaab', image: 'images/book.png' },
+            { name: 'Pen', arabic: 'قَلَمٌ', transliteration: 'Qalam', image: 'images/pen.png' },
+            { name: 'Football', arabic: 'كُرَّةُ الْقَدَم', transliteration: 'Kurratul-qadam', image: 'images/football.png' },
+            { name: 'Cricket', arabic: 'كِرِيْكِتٌ', transliteration: 'Kireekit', image: 'images/cricket.png' },
+            { name: 'Spinning top', arabic: 'دُوَّامَةٌ', transliteration: 'Dawwaamah', image: 'images/spinningTop.png' }
+        ];
+    </script>
+
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year3Pages/year3.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>House Rooms</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div id="vocabularyImageContainer" class="imageContainer">
+                <img id="vocabularyImage" src="images/house.png" alt="House" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()">House - بَيْتٌ (Baytun)</p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'House', arabic: 'بَيْتٌ', transliteration: 'Bayt', image: 'images/house.png' },
+            { name: 'Window', arabic: 'شُبَّاكٌ', transliteration: 'Shubbak', image: 'images/window.png' },
+            { name: 'Door', arabic: 'بَابٌ', transliteration: 'Baab', image: 'images/door.png' },
+            { name: 'Bedroom', arabic: 'غُرْفَةُ النَّوْم', transliteration: 'Ghurfat al-nawm', image: 'images/bedroom.png' },
+            { name: 'Bathroom', arabic: 'حَمَّام', transliteration: 'Hammaam', image: 'images/bathroom.png' },
+            { name: 'Living Room', arabic: 'غُرْفَةُ الجُلُوْس', transliteration: 'Ghurfatul-juloos', image: 'images/livingroom.png' },
+            { name: 'Kitchen', arabic: 'مَطْبَخٌ', transliteration: 'Matbakh', image: 'images/kitchen.png' }
+        ];
+    </script>
+
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year3Pages/year3.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

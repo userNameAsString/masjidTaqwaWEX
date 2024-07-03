@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Duroos Lesson 3</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Duroos Lesson 3 Vocabulary</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div id="vocabularyImageContainer" class="imageContainer" style="display: none;">
+                <img id="vocabularyImage" src="" alt="" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()"></p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'Broken', arabic: 'مَكْسُور', transliteration: 'Maksoor' },
+            { name: 'Open', arabic: 'مَفْتُوح', transliteration: 'Maftooh' },
+            { name: 'Sitting', arabic: 'جَالِس', transliteration: 'Jaalis' },
+            { name: 'Standing', arabic: 'وَاقِف', transliteration: 'Waaqif' },
+            { name: 'New', arabic: 'جَدِيد', transliteration: 'Jadeed' },
+            { name: 'Old', arabic: 'قَدِيم', transliteration: 'Qadeem' },
+            { name: 'Small', arabic: 'صَغِير', transliteration: 'Sagheer' },
+            { name: 'Big', arabic: 'كَبِير', transliteration: 'Kabeer' },
+            { name: 'Dirty', arabic: 'وَسِخ', transliteration: 'Wasikh' },
+            { name: 'Cold', arabic: 'بَارِد', transliteration: 'Baarid' },
+            { name: 'Beautiful', arabic: 'جَمِيل', transliteration: 'Jameel' },
+            { name: 'Close', arabic: 'قَرِيب', transliteration: 'Qareeb' },
+            { name: 'Far', arabic: 'بَعِيد', transliteration: 'Ba\'eed' },
+            { name: 'Heavy', arabic: 'ثَقِيل', transliteration: 'Thaqeel' },
+            { name: 'Light', arabic: 'خَفِيف', transliteration: 'Khafeef' },
+            { name: 'Hot', arabic: 'حَار', transliteration: 'Haar' },
+            { name: 'Clean', arabic: 'نَظِيف', transliteration: 'Nazheef' },
+            { name: 'Paper', arabic: 'وَرَق', transliteration: 'Waraq' },
+            { name: 'Moon', arabic: 'قَمَر', transliteration: 'Qamar' },
+            { name: 'Engineer', arabic: 'مُهَنْدِس', transliteration: 'Muhandis' },
+            { name: 'Sweet', arabic: 'حُلْو', transliteration: 'Hulw' },
+            { name: 'Sick/ill', arabic: 'مَرِيض', transliteration: 'Mareedh' },
+            { name: 'Notebook', arabic: 'دَفْتَر', transliteration: 'Daftar' },
+            { name: 'Rich', arabic: 'غَنِي', transliteration: 'Ghaniy' },
+            { name: 'Shop', arabic: 'دُكَّان', transliteration: 'Dukkaan' },
+            { name: 'Poor', arabic: 'فَقِير', transliteration: 'Faqeer' },
+            { name: 'Tasty', arabic: 'لَذِيذ', transliteration: 'Ladheedh' },
+            { name: 'Tall', arabic: 'طَوِيل', transliteration: 'Taweel' },
+            { name: 'Short', arabic: 'قَصِير', transliteration: 'Qaseer' },
+        ];
+    </script>
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year3Pages/year3.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

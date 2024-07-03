@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Face</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div class="imageContainer">
+                <img id="vocabularyImage" src="images/face.png" alt="Face" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()">وَجْهٌ - Face (wajh)</p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'Face', arabic: 'وَجْهٌ', transliteration: 'wajh', image: 'images/face.png' },
+            { name: 'Eye', arabic: 'عَيْنٌ', transliteration: 'ain', image: 'images/eye.png' },
+            { name: 'Ear', arabic: 'اُذُنٌ', transliteration: 'udhun', image: 'images/ear.png' },
+            { name: 'Mouth', arabic: 'فَمٌ', transliteration: 'fam', image: 'images/mouth.png' },
+            { name: 'Nose', arabic: 'اَنْفٌ', transliteration: 'anf', image: 'images/nose.png' },
+            { name: 'Lips', arabic: 'شَفَتَان', transliteration: 'shafataan', image: 'images/lips.png' },
+            { name: 'Cheek', arabic: 'خَدُّ', transliteration: 'khadd', image: 'images/cheek.png' },
+            { name: 'Hair', arabic: 'شَعْرٌ', transliteration: 'sha\'r', image: 'images/hair.png' },
+            { name: 'Head', arabic: 'رَأْسٌ', transliteration: 'ra\'s', image: 'images/head.png' },
+            { name: 'Teeth', arabic: 'اَسْنَانٌ', transliteration: 'asnaan', image: 'images/teeth.png' },
+            { name: 'Tongue', arabic: 'لِسَانٌ', transliteration: 'lisaan', image: 'images/tongue.png' }
+        ];
+    </script>
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year2Pages/year2.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

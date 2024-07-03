@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Wild Animals</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div class="imageContainer">
+                <img id="vocabularyImage" src="images/camel.png" alt="Camel" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()">جَمَلٌ - Camel (jamal)</p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'Camel', arabic: 'جَمَلٌ', transliteration: 'jamal', image: 'images/camel.png' },
+            { name: 'Giraffe', arabic: 'زَرَافَةٌ', transliteration: 'zaraafah', image: 'images/giraffe.png' },
+            { name: 'Hippo', arabic: 'فَرَسُ الْنَهْرِ', transliteration: 'farasun-nahr', image: 'images/hippo.png' },
+            { name: 'Monkey', arabic: 'قِرْدٌ', transliteration: 'qird', image: 'images/monkey.png' },
+            { name: 'Elephant', arabic: 'فِيْلٌ', transliteration: 'feel', image: 'images/elephant.png' },
+            { name: 'Bear', arabic: 'دُبٌّ', transliteration: 'dubb', image: 'images/bear.png' },
+            { name: 'Crocodile', arabic: 'تِمْسَاحٌ', transliteration: 'timsaah', image: 'images/crocodile.png' },
+            { name: 'Lion', arabic: 'اَسَدٌ', transliteration: 'asad', image: 'images/lion.png' },
+            { name: 'Rooster', arabic: 'دِيْكٌ', transliteration: 'deek', image: 'images/rooster.png' },
+            { name: 'Horse', arabic: 'فَرَسٌ', transliteration: 'faras', image: 'images/horse.png' },
+            { name: 'Cow', arabic: 'بَقَرَة', transliteration: 'baqarah', image: 'images/cow.png' },
+            { name: 'Snake', arabic: 'ثُعْبَانٌ', transliteration: 'thu‘baan', image: 'images/snake.png' }
+        ];
+    </script>
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year1Pages/year1.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

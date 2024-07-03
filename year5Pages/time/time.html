@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Time</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div id="vocabularyImageContainer" class="imageContainer">
+                <img id="vocabularyImage" src="" alt="" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()"></p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+    <script>
+        const vocabulary= [
+            { name: 'Time', arabic: 'وَقْت', transliteration: 'Waqt' },
+            { name: 'Before', arabic: 'قَبْل', transliteration: 'Qabl' },
+            { name: 'After', arabic: 'بَعْد', transliteration: 'Ba\'d' },
+            { name: 'What time is it?', arabic: 'كَمِ السَّاعَة؟', transliteration: 'Kamis-saa\'ah?' },
+            { name: 'What day is it?', arabic: 'أَيُّ يَوْمٍ؟', transliteration: 'Ayyu yawm?' },
+            { name: 'Which month is it?', arabic: 'أَيُّ شَهْرٍ؟', transliteration: 'Ayyu Shahr?' },
+            { name: '1 o\'clock', arabic: 'السَّاعَةُ الوَاحِدَة', transliteration: 'As-Sa\'ahtul-waahidah' },
+            { name: '2 o\'clock', arabic: 'السَّاعَةُ الثَّانِيَة', transliteration: 'As-Sa\'ahtuth-thaaniyah' },
+            { name: '3 o\'clock', arabic: 'السَّاعَةُ الثَّالِثَة', transliteration: 'As-Sa\'ahtuth-thaalithah' },
+            { name: '4 o\'clock', arabic: 'السَّاعَةُ الرَّابِعَة', transliteration: 'As-Sa\'ahtur-raabiah' },
+            { name: '5 o\'clock', arabic: 'السَّاعَةُ الْخَامِسَة', transliteration: 'As-Sa\'ahtul-khaamisah' },
+            { name: '6 o\'clock', arabic: 'السَّاعَةُ السَّادِسَة', transliteration: 'As-Sa\'ahtus-saadisah' },
+            { name: '7 o\'clock', arabic: 'السَّاعَةُ السَّابِعَة', transliteration: 'As-Sa\'ahtus-saabi\'ah' },
+            { name: '8 o\'clock', arabic: 'السَّاعَةُ الثَّامِنَة', transliteration: 'As-Sa\'ahtuth-thaaminah' },
+            { name: '9 o\'clock', arabic: 'السَّاعَةُ التَّاسِعَة', transliteration: 'As-Sa\'ahtut-taasi\'ah' },
+            { name: '10 o\'clock', arabic: 'السَّاعَةُ الْعَاشِرَة', transliteration: 'As-Sa\'ahtul-\'aashirah' },
+            { name: '11 o\'clock', arabic: 'السَّاعَةُ الْحَادِيَةَ عَشْرَة', transliteration: 'As-Sa\'ahtul-haadiyah \'asharah' },
+            { name: '12 o\'clock', arabic: 'السَّاعَةُ الثَّانِيَةَ عَشْرَة', transliteration: 'As-Sa\'ahtuth-thaaniyah \'asharah' },
+            { name: '5 past', arabic: 'وخَمْسَ دَقَائِق', transliteration: 'Wa khamsa daqaa\'iq' },
+            { name: '10 past', arabic: 'وعَشَرَ دَقَائِق', transliteration: 'Wa ashara daqaa\'iq' },
+            { name: 'Quarter past', arabic: 'والرُبُع', transliteration: 'War-rubu\'' },
+            { name: '20 past', arabic: 'والثُّلُث', transliteration: 'Wath-thuluth' },
+            { name: 'Half past', arabic: 'والنِصف', transliteration: 'Wan-nisf' },
+            { name: 'To', arabic: 'اِلَّا', transliteration: 'Illaa' },
+            { name: 'Five to', arabic: 'اِلَّا خَمْسَ دَقَائِق', transliteration:  'Illaa khamsa daqaa\'iq'},
+            { name: 'Ten to', arabic: 'اِلَّا عَشَر دَقَائِق', transliteration: 'Illaa \'ashara daqaa\'iq'},
+            { name: 'Quarter to', arabic: 'اِلَّاالرُّبُع', transliteration: 'Illar-rubu\'' },
+            { name: 'Twenty to', arabic: 'اِلَّاالثُلُث', transliteration: 'Illath-thuluth' },
+            { name: 'Minutes', arabic: 'دَقَائِق', transliteration: 'Daqaa\'iq' },
+            { name: 'Morning', arabic: 'صَبَاح', transliteration: 'Sabaah' },
+            { name: 'Evening', arabic: 'مَسَاء', transliteration: 'Masaa\'a' },
+            { name: 'Yesterday', arabic: 'أَمْس', transliteration: 'Ams' },
+            { name: 'Tomorrow', arabic: 'غَدًا', transliteration: 'Ghadan' }
+        ];
+    </script>
+    
+    
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year5Pages/year5.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

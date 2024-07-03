@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Islamic Months</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div class="imageContainer" style="display: none;">
+                <img id="vocabularyImage" src="" alt="" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()">Muharram - مُحَرَّم</p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'Muharram', arabic: 'مُحَرَّم' },
+            { name: 'Saffar', arabic: 'صَفَّر' },
+            { name: 'Rabi’ul Awwal', arabic: 'رَبِيْعُ الْاَوَّل' },
+            { name: 'Rabi-a-Thaani', arabic: 'رَبِيْعُ الثَّانِى' },
+            { name: 'Jamad-al-awwal', arabic: 'جَمَادى الاَول' },
+            { name: 'Jamad-al-Aakhir', arabic: 'جَمَادى الْاٰخِر' },
+            { name: 'Rajab', arabic: 'رَجَّب' },
+            { name: 'Sha’baan', arabic: 'شَعْبان' },
+            { name: 'Ramadhan', arabic: 'رَمَضَان' },
+            { name: 'Shawwal', arabic: 'شَوَّال' },
+            { name: 'Dhul Qa’dah', arabic: 'ذُو الْقَعْدَة' },
+            { name: 'Dhul Hijjah', arabic: 'ذُو الحِجَّة' }
+        ];
+    </script>
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/receptionPages/reception.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>

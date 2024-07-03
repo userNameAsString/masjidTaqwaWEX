@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Masjid Taqwa</title>
+</head>
+<body>
+    <button id="help" onclick="showHelp()">?</button>
+    <div class="title"> 
+        <u><h1>Greeting Phrases</h1></u>
+        <br>
+    </div>
+    <p class="subtitle" id="prompt" style="text-decoration: none;">
+        Click on the words to play a sound
+    </p>
+
+    <div class="contentContainer">
+        <button id="prevArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" style="transform: scaleX(-1);" class="arrowImage" onclick="showPrev()">
+        </button>
+        <div id="vocabularyDisplay">
+            <div id="vocabularyImageContainer" class="imageContainer" style="display: none;">
+                <img id="vocabularyImage" src="" alt="" onclick="speakText()">
+            </div>
+            <p id="vocabularyText" onclick="speakText()">السَّلاَمُ عَلَيْكُم - Peace be upon you (As-salamu alaykum)</p>
+        </div>
+        <button id="nextArrowButton" class="arrowButton">
+            <img src="/images/arrow.png" class="arrowImage" onclick="showNext()">
+        </button>
+    </div>
+
+    <div id="pageButtons"></div>
+    <div id="navigationButtons">
+        <button onclick="navigateToPage('back')" id="backButton" class="navButton">Back</button>
+        <button onclick="navigateToPage('home')" id="homeButton" class="navButton">Home</button>
+        <button onclick="navigateToPage('next')" id="nextButton" class="navButton">Next</button>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { name: 'Peace be upon you', arabic: 'السَّلَامُ عَلَيْكُم', transliteration: 'As-salamu alaykum' },
+            { name: 'And peace be upon you', arabic: 'و عَلَيْكُمُ السَّلام', transliteration: 'Wa alaykum as-salam' },
+            { name: 'How are you? (M)', arabic: 'كيف حالُكَ', transliteration: 'Kayfa haluka' },
+            { name: 'How are you? (F)', arabic: 'كيف حالُكِ', transliteration: 'Kayfa haluki' },
+            { name: 'My name is', arabic: 'أِسْمِىْ', transliteration: 'Ismee' },
+            { name: 'What is your name? (M)', arabic: 'مَاسْمُكَ', transliteration: 'Ma ismuka' },
+            { name: 'What is your name? (F)', arabic: 'مَاسْمُكِ', transliteration: 'Ma ismuki' },
+            { name: 'This (M)', arabic: 'هذَا', transliteration: 'Hatha' },
+            { name: 'This (F)', arabic: 'هذِه', transliteration: 'Hathihi' }
+        ];
+    </script>
+    <script src="/javaScript/vocabPages.js"></script>
+    <script src="/year1Pages/year1.js"></script> 
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>
