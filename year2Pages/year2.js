@@ -2,7 +2,7 @@ const yearPages = [
     { name: 'Face', url: '/year2Pages/face/face.html' },
     { name: 'Family', url: '/year2Pages/family/family.html' },
     { name: 'Meeting and Greeting Phrases', url: '/year2Pages/meetingAndGreeting/meetingAndGreeting.html' },
-    { name: 'Phrases', url: 'year2Pages/phrases/phrases.html' },
+    { name: 'Phrases', url: '/year2Pages/phrases/phrases.html' },
     { name: 'Professions', url: '/year2Pages/professions/professions.html' },
     { name: 'Quran', url: '/year2Pages/quran/quran.html' },
     { name: 'Rooms', url: '/year2Pages/rooms/rooms.html' },

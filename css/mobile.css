@@ -254,3 +254,45 @@ h1{
 #prompt{
   clear: both;
 }
+
+#quizButton{
+  width: 92vw;
+  height: 100px;
+}
+
+#quizBox{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+#question{
+  font-size: 200%;
+  margin-top: 3vh;
+  height: 10vh;
+}
+
+.multipleChoiceButton{
+  width: 94vw;
+  transition: 0.3s;
+  height: 15vh;
+  background-color: #071f38;
+  border: none;
+  border-radius: 10px;
+  color: #c8a023;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 250%;
+  margin: 1vh 1vw;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pointsDisplay{
+  font-size: 200%;
+  margin-top: 3vh;
+}

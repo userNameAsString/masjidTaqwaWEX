@@ -81,3 +81,101 @@ document.addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenX
   checkDirection()
 })
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+function quiz(){
+    const quizBox = document.getElementById("quizBox");
+    quizBox.style.display = 'inline-block';
+    quizBox.style.height = '100vh';
+    quizBox.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    const question = document.createElement('p');
+    question.className = 'normText';
+    question.id = 'question';
+    const pointDisplay = document.createElement('p');
+    pointDisplay.className = 'normText';
+    pointDisplay.id = "pointsDisplay";
+    var points = 0;
+    var numOfQuestions = 0;
+    questionGenerator()
+    function questionGenerator(){
+        function randomInt(minInclusive,maxInclusive){
+            return Math.floor(Math.random() * (maxInclusive - minInclusive + 1) ) + minInclusive;
+        }
+        function repeats(i){
+            for (let j = 0; j < 4; j++) {
+                if(j == i){continue;}
+                try{
+                    if(buttons[i].textContent === buttons[j].textContent){
+                        return true
+                    }   
+                }catch(err){
+                    continue;
+                }
+            }
+            return false
+        }
+        const buttons = [];
+        document.getElementById("quizBox").innerHTML = ""; //Clear quizBox before starting quiz
+        for (let i = 0; i < 4; i++) {
+        buttons[i] = document.createElement('button');
+        buttons[i].className = 'multipleChoiceButton';
+        buttons[i].onclick = function(){
+                console.log("Checking the answer")
+                document.getElementById("correctAnswer").style.backgroundColor = "#158515";
+                points++;
+                if(i != chosenButtonIndex){
+                    document.getElementsByClassName("multipleChoiceButton")[i].style.backgroundColor = "#9b1414";
+                    points--;
+                }
+                for (let j = 0; j < 4; j++) {
+                    buttons[j].onclick = null;
+                }
+                window.setTimeout(questionGenerator,1724)
+        }
+        }
+        var questionVocab = vocabulary[randomInt(0,vocabulary.length - 1)]
+        if(Math.random()>0.5){ //Arabic to English question
+            if(questionVocab.transliteration){
+                question.textContent = `What does ${questionVocab.arabic}(${questionVocab.transliteration})  mean?`;
+            }else{
+                question.textContent = `What does ${questionVocab.arabic} mean?`;
+            }
+            var chosenButtonIndex = randomInt(0,3);
+            buttons[chosenButtonIndex].textContent = questionVocab.name;
+            buttons[chosenButtonIndex].id = 'correctAnswer';
+            for (let i = 0; i < 4; i++) {
+                if(i !== chosenButtonIndex){
+                    do{
+                        buttons[i].textContent = vocabulary[randomInt(0,vocabulary.length - 1)].name;
+                    }while(repeats(i));
+                }
+            }
+        }else{ //English to Arabic question
+            question.textContent = `What is ${questionVocab.name} in Arabic?`;
+            var chosenButtonIndex = randomInt(0,3);
+            buttons[chosenButtonIndex].textContent = questionVocab.arabic;
+            buttons[chosenButtonIndex].id = 'correctAnswer';
+            for (let i = 0; i < 4; i++) {
+                if(i !== chosenButtonIndex){
+                    do{
+                        buttons[i].textContent = vocabulary[randomInt(0,vocabulary.length - 1)].arabic;
+                    }while(repeats(i));
+                }
+            }
+        }
+        quizBox.appendChild(question)
+        for (let i = 0; i < 4; i++) {
+            quizBox.appendChild(buttons[i]);
+        }
+        pointDisplay.textContent = `Score: ${points}/${numOfQuestions}`
+        quizBox.appendChild(pointDisplay)
+        numOfQuestions++;
+    }
+}
+
+
+

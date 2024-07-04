@@ -6,7 +6,7 @@ const yearPages = [
     { name: 'Face', url: '/year3Pages/face/face.html' },
     { name: 'Family', url: '/year3Pages/family/family.html' },
     { name: 'Meeting and Greeting Phrases', url: '/year3Pages/meetingAndGreeting/meetingAndGreeting.html' },
-    { name: 'Phrases', url: 'year3Pages/phrases/phrases.html' },
+    { name: 'Phrases', url: '/year3Pages/phrases/phrases.html' },
     { name: 'Professions', url: '/year3Pages/professions/professions.html' },
     { name: 'Quran', url: '/year3Pages/quran/quran.html' },
     { name: 'Rooms', url: '/year3Pages/rooms/rooms.html' },
