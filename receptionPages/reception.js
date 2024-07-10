@@ -21,7 +21,7 @@ function navigateToPage(direction) {
         targetPageIndex = (currentPageIndex - 1 + yearPages.length) % yearPages.length;
     } else if (direction === 'home') {
         window.location.href = '/index.html';
-        localStorage.setItem('showYearPages', 'reception');  // Set the appropriate year identifier
+        sessionStorage.setItem('showYearPages', 'reception');  // Set the appropriate year identifier
         return;
     } 
     window.location.href = yearPages[targetPageIndex].url;

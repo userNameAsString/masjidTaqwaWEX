@@ -1,16 +1,13 @@
 function showPages(year) {
     console.log("Showing pages for: " + year)
-    const selectors = document.querySelectorAll('.selector');
-    
-    // Reset all selector buttons to default color
-    selectors.forEach(selector => {
-        selector.style.backgroundColor = '#02213f';
-    });
-  
+    if(document.getElementsByClassName("selectorOn")[0]){
+        document.getElementsByClassName("selectorOn")[0].className = "selector";
+    }
+    const selectors = document.getElementsByClassName('selector');
     // Set the background color of the clicked selector button
     const selectedButton = document.getElementById(`selector${year.charAt(0).toUpperCase()}${year.slice(1)}`);
     if (selectedButton) {
-        selectedButton.style.backgroundColor = '#040b19';
+        selectedButton.className = "selectorOn";
     }
   
     // Update subtitle text with proper formatting
@@ -127,6 +124,50 @@ function showPages(year) {
     }
 }
 
+const checkIsDarkSchemePreferred = () => window?.matchMedia?.('(prefers-color-scheme:dark)')?.matches ?? false;
+const isDarkSchemePreferred = checkIsDarkSchemePreferred();
+if(localStorage.getItem("darkModeSelected") == null){
+    console.log("Previous dark mode preference has not been found")
+    localStorage.setItem("darkModeSelected",isDarkSchemePreferred);
+    console.log(`Set to system preference (${localStorage.darkModeSelected})`)
+}
+
+function switchDarkMode() {
+    if(localStorage.darkModeSelected == "true"){
+        localStorage.darkModeSelected = false;
+    }else{
+        localStorage.darkModeSelected = true;
+    }
+    console.log(`Switched dark mode preference to: ${localStorage.darkModeSelected}`)
+    handleColourMode();
+}
+
+
+const darkLightModeLink = document.getElementById("darkLightMode");
+var buttonOuterContainer = document.getElementById("darkModeOuterContainer");
+var buttonInnerContainer = document.getElementById("darkModeInnerContainer");
+var buttonSwitch = document.getElementById("darkModeSwitch");
+function handleColourMode(){
+    if(localStorage.darkModeSelected == "true"){
+        darkLightModeLink.href = "/css/dark.css";
+        console.log("selecting dark stylesheet")
+        if(document.getElementById("lightModeOuterContainer")){
+            document.getElementById("lightModeOuterContainer").id = "darkModeOuterContainer";
+            document.getElementById("lightModeInnerContainer").id = "darkModeInnerContainer";
+            document.getElementById("lightModeSwitch").id = "darkModeSwitch";
+        }
+    }else{
+        darkLightModeLink.href = "/css/light.css"
+        console.log("selecting light stylesheet")
+        if(document.getElementById("darkModeOuterContainer")){
+            document.getElementById("darkModeOuterContainer").id = "lightModeOuterContainer";
+            document.getElementById("darkModeInnerContainer").id = "lightModeInnerContainer";
+            document.getElementById("darkModeSwitch").id = "lightModeSwitch";
+        }
+    }
+}
+
+handleColourMode();
 const isMobile = /android.+mobile|ip(hone|[oa]d)/i.test(navigator.userAgent);
 const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(navigator.userAgent.toLowerCase());
 
@@ -134,11 +175,13 @@ console.log("Is the device considered mobile: " + isMobile);
 console.log("Is the device a tablet: " + isTablet);
 
 if(isMobile){
-  console.log("Stylesheet changed to mobile.css")
+console.log("mobile.css used as stylesheet")
   document.getElementById("css").href = "/css/mobile.css";
   if(document.getElementById("nextArrowButton")){
     document.getElementById("prevArrowButton").remove();
     document.getElementById("nextArrowButton").remove();
     document.getElementById("prompt").innerHTML="Click on the words to play a sound<br> Swipe to cycle through the vocabulary";
   }
+}else{
+    console.log("desktop.css used as stylesheet")
 }

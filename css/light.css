@@ -1,0 +1,51 @@
+body {
+    background-color: #f5f5f5; /* Light background color */
+  }
+  
+  .title, .titleBox, #vocabularyDisplay p, .normText, ol {
+    color: #81630e; /* Darker gold color for text */
+  }
+  
+  .normal, .normal, #help, .navButton {
+    background-color: #d9e2ec; /* Light background color */
+    color: #9b7610; /* Darker gold color for text */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.08); /* Lighter box-shadow */
+  }
+  
+  .selector {
+    background-color: #b0c4de; /* Light steel blue color */
+    color: #96710e; /* Darker gold color for text */
+  }
+
+  .selectorOn{
+    background-color: #4d6e99;
+    color: #c8a023;
+  }
+
+  .selector:hover,.selectorOn:hover {
+    background-color: #4d6e99;
+    color: #c8a023;
+    cursor: pointer;
+  }
+  
+  .titleBox {
+    background-color: #d9e2ec; /* Light background color */
+  }
+  
+  .subtitle {
+    color: #c8a023; /* Tan color for subtitles */
+  }
+  
+  a {
+    color: #0056b3; /* Darker blue color for links */
+  }
+  
+  .multipleChoiceButton, #finishButton {
+    background-color: #cee4f1; /* Light background color */
+    color: #b48f1d; /* Darker gold color for text */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.08); /* Lighter box-shadow */
+  }
+
+  
+  
+

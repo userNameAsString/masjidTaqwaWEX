@@ -88,6 +88,7 @@ function sleep(ms) {
 
 
 function quiz(){
+    const quizButton = document.getElementById("quizButton");
     const quizBox = document.getElementById("quizBox");
     quizBox.style.display = 'inline-block';
     quizBox.style.height = '100vh';
@@ -100,6 +101,16 @@ function quiz(){
     pointDisplay.id = "pointsDisplay";
     var points = 0;
     var numOfQuestions = 0;
+    const finishButton = document.createElement('button');
+    finishButton.id = "finishButton";
+    finishButton.textContent = "Finish";
+    finishButton.onclick = function(){
+        quizBox.innerHTML = "";
+        quizBox.appendChild(quizButton);
+        quizBox.style.height = "auto";
+        return;
+    }
+    const lastThreeQs = [];
     questionGenerator()
     function questionGenerator(){
         function randomInt(minInclusive,maxInclusive){
@@ -137,7 +148,14 @@ function quiz(){
                 window.setTimeout(questionGenerator,1724)
         }
         }
-        var questionVocab = vocabulary[randomInt(0,vocabulary.length - 1)]
+        var questionVocab;
+        do{
+            questionVocab = vocabulary[randomInt(0,vocabulary.length - 1)]
+        }while(lastThreeQs.includes(questionVocab))
+        lastThreeQs.push(questionVocab);
+        if(lastThreeQs.length > 3){
+            lastThreeQs.shift()
+        }
         if(Math.random()>0.5){ //Arabic to English question
             if(questionVocab.transliteration){
                 question.textContent = `What does ${questionVocab.arabic}(${questionVocab.transliteration})  mean?`;
@@ -171,8 +189,9 @@ function quiz(){
         for (let i = 0; i < 4; i++) {
             quizBox.appendChild(buttons[i]);
         }
-        pointDisplay.textContent = `Score: ${points}/${numOfQuestions}`
+        pointDisplay.textContent = `${points}/${numOfQuestions}`
         quizBox.appendChild(pointDisplay)
+        quizBox.appendChild(finishButton)
         numOfQuestions++;
     }
 }

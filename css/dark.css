@@ -1,0 +1,48 @@
+body{
+  background-color: #040b19;
+}
+
+.title, .titleBox,#vocabularyDisplay p,.normText,ol {
+    color: #c8a023;
+}
+
+.normal,.normal,#help,.navButton {
+    background-color: #041424;
+    color: #c8a023;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.selector{
+  background-color: #02213f;
+  color: #c8a023;
+}
+
+.selectorOn{
+  background-color: #040b19;
+  color: #c8a023;
+}
+
+.selector:hover,.selectorOn:hover {
+  background-color: #040b19;
+  cursor: pointer;
+}
+
+.titleBox {
+    background-color: #041424;
+}
+  
+.subtitle{
+  color: #f0e68c;
+}
+
+a{
+    color: #2285e0;
+}
+  
+.multipleChoiceButton,#finishButton{
+    background-color: #071f38;
+    color: #c8a023;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+

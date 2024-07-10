@@ -5,13 +5,18 @@
   <title>Masjid Taqwa</title>
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/x-icon" href="images/logo.png">
-  <link id="css" href="css/style.css" rel="stylesheet" type="text/css" />
-  <script src="javaScript/script.js"></script>
+  <link id="darkLightMode" href="css/dark.css" rel="stylesheet" type="text/css" />
+  <link id="css" href="css/desktop.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body style="margin: 0% 0px 20px 0%;">
   <div class="titleBox">
     <br>
+    <div id="darkModeOuterContainer">
+      <div id="darkModeInnerContainer">
+        <button id="darkModeSwitch" onclick="switchDarkMode()"></button>
+      </div>
+    </div>
     <p id="mainTitle">ARABIC VOCABULARY HOMEPAGE</p>
     <br>
     <button class="selector" id="selectorReception" onclick="showPages('reception')">R</button>
@@ -30,14 +35,15 @@
   </div>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      const yearToShow = localStorage.getItem('showYearPages');
+      const yearToShow = sessionStorage.getItem('showYearPages');
         if (yearToShow) {
-          localStorage.removeItem('showYearPages');
+          sessionStorage.removeItem('showYearPages');
           showPages(yearToShow);
         }else{
           showPages('reception')
         }
     });
   </script>
+  <script src="javaScript/script.js"></script>
 </body>
 </html>
