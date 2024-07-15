@@ -1,0 +1,24 @@
+{
+    "background_color": "#040b19",
+    "display": "standalone",
+    "dir": "auto",
+    "name": "Sahl Arabic - Arabic Vocabulary Learning",
+    "orientation": "portrait",
+    "scope": "https://masjid-taqwa.netlify.app",
+    "short_name": "Sahl Arabic",
+    "start_url": "https://masjid-taqwa.netlify.app",
+    "theme_color": "#c8a023",
+    "icons": [
+      {
+        "src": "images/logo.png",
+        "type": "image/png",
+        "sizes": "246x246"
+      }
+    ],
+    "id": "sahlArabicVocabularyLearning",
+    "description": "Sahl Arabic makes learning Arabic vocabulary easy for children, with interactive learning pages that are optimised for ease of use.",
+    "categories": [
+      "education",
+      "kids"
+    ]
+  }
