@@ -26,7 +26,7 @@ function navigateToPage(direction) {
     } else if (direction === 'back') {
         targetPageIndex = (currentPageIndex - 1 + yearPages.length) % yearPages.length;
     } else if (direction === 'home') {
-        window.location.href = '/index.html';
+        window.location.href = '/';
         sessionStorage.setItem('showYearPages', 'year6');  // Set the appropriate year identifier
         return;
     }
