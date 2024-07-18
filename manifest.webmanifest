@@ -1,0 +1,156 @@
+{
+  "background_color": "#040b19",
+  "dir": "auto",
+  "display": "standalone",
+  "name": "Arabic Vocabulary Learning - Masjid Taqwa",
+  "orientation": "portrait",
+  "scope": "https://masjid-taqwa.netlify.app",
+  "short_name": "Masjid Taqwa Arabic",
+  "start_url": "https://masjid-taqwa.netlify.app/",
+  "theme_color": "#c8a023",
+  "icons": [
+    {
+      "src": "images/16.png",
+      "type": "manifestIcons/png",
+      "sizes": "16"
+    },
+    {
+      "src": "images/20.png",
+      "type": "manifestIcons/png",
+      "sizes": "20x20"
+    },
+    {
+      "src": "images/29.png",
+      "type": "manifestIcons/png",
+      "sizes": "29x29"
+    },
+    {
+      "src": "images/32.png",
+      "type": "manifestIcons/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "images/40.png",
+      "type": "manifestIcons/png",
+      "sizes": "40x40"
+    },
+    {
+      "src": "images/50.png",
+      "type": "manifestIcons/png",
+      "sizes": "50x50"
+    },
+    {
+      "src": "images/57.png",
+      "type": "manifestIcons/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "images/58.png",
+      "type": "manifestIcons/png",
+      "sizes": "58x58"
+    },
+    {
+      "src": "images/60.png",
+      "type": "manifestIcons/png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "images/64.png",
+      "type": "manifestIcons/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "images/72.png",
+      "type": "manifestIcons/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "images/76.png",
+      "type": "manifestIcons/png",
+      "sizes": "76x76"
+    },
+    {
+      "src": "images/80.png",
+      "type": "manifestIcons/png",
+      "sizes": "80x80"
+    },
+    {
+      "src": "images/87.png",
+      "type": "manifestIcons/png",
+      "sizes": "87x87"
+    },
+    {
+      "src": "images/100.png",
+      "type": "manifestIcons/png",
+      "sizes": "100x100"
+    },
+    {
+      "src": "images/114.png",
+      "type": "manifestIcons/png",
+      "sizes": "114x114"
+    },
+    {
+      "src": "images/120.png",
+      "type": "manifestIcons/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "images/128.png",
+      "type": "manifestIcons/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "images/144.png",
+      "type": "manifestIcons/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/152.png",
+      "type": "manifestIcons/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "images/167.png",
+      "type": "manifestIcons/png",
+      "sizes": "167x167"
+    },
+    {
+      "src": "images/180.png",
+      "type": "manifestIcons/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "images/192.png",
+      "type": "manifestIcons/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/256.png",
+      "type": "manifestIcons/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "images/512.png",
+      "type": "manifestIcons/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/1024.png",
+      "type": "manifestIcons/png",
+      "sizes": "1024x1024"
+    }],
+  "id": "masjidTaqwaArabic",
+  "description": "This app is great for teaching young children Arabic vocabulary.",
+  "lang": "en",
+  "display_override": [
+    "standalone",
+    "fullscreen",
+    "minimal-ui",
+    "window-controls-overlay",
+    "browser"
+  ],
+  "categories": [
+    "education",
+    "kids"
+  ]
+}
