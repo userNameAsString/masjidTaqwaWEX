@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Masjid Taqwa</title>
   <meta name="viewport" content="width=device-width">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" type="image/x-icon" href="images/logo.png">
   <link id="darkLightMode" href="css/dark.css" rel="stylesheet" type="text/css" />
   <link id="css" href="css/desktop.css" rel="stylesheet" type="text/css" />
@@ -34,9 +35,6 @@
     
   </div>
   <script>
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('/javaScript/sw.js')
-    }
     document.addEventListener("DOMContentLoaded", function() {
       const yearToShow = sessionStorage.getItem('showYearPages');
         if (yearToShow) {

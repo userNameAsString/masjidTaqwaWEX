@@ -1,3 +1,8 @@
+if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('/javaScript/sw.js')
+}
+
+
 function showPages(year) {
     console.log("Showing pages for: " + year)
     if(document.getElementsByClassName("selectorOn")[0]){
