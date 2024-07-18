@@ -90,6 +90,7 @@ function sleep(ms) {
 function quiz(){
     const quizButton = document.getElementById("quizButton");
     const quizBox = document.getElementById("quizBox");
+    quizBox.className = "lockScroll";
     quizBox.style.display = 'inline-block';
     quizBox.style.height = '100vh';
     quizBox.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
@@ -105,6 +106,7 @@ function quiz(){
     finishButton.id = "finishButton";
     finishButton.textContent = "Finish";
     finishButton.onclick = function(){
+        quizBox.className = "";
         quizBox.innerHTML = "";
         quizBox.appendChild(quizButton);
         quizBox.style.height = "auto";

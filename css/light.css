@@ -1,6 +1,13 @@
 body {
     background-color: #f5f5f5; /* Light background color */
   }
+
+  .lockScroll {
+    z-index: 100;
+    position: fixed;
+    background-color: #f5f5f5;
+    top:0%;
+  }
   
   .title, .titleBox, #vocabularyDisplay p, .normText, ol {
     color: #81630e; /* Darker gold color for text */

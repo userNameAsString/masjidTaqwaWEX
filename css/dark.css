@@ -2,6 +2,10 @@ body{
   background-color: #040b19;
 }
 
+.lockScroll {
+  background-color: #010d1a;
+}
+
 .title, .titleBox,#vocabularyDisplay p,.normText,ol {
     color: #c8a023;
 }
