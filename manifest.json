@@ -4,9 +4,9 @@
   "display": "standalone",
   "name": "Arabic Vocabulary Learning - Masjid Taqwa",
   "orientation": "portrait",
-  "scope": "/",
+  "scope": "https://masjid-taqwa.netlify.app/",
   "short_name": "Masjid Taqwa Arabic",
-  "start_url": "/",
+  "start_url": "https://masjid-taqwa.netlify.app/",
   "theme_color": "#c8a023",
   "icons": [
     {
