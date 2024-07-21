@@ -127,17 +127,20 @@
     {
       "src": "manifestIcons/256.png",
       "type": "image/png",
-      "sizes": "256x256"
+      "sizes": "256x256",
+      "purpose": "any maskable"
     },
     {
       "src": "manifestIcons/512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     },
     {
       "src": "manifestIcons/1024.png",
       "type": "image/png",
-      "sizes": "1024x1024"
+      "sizes": "1024x1024",
+      "purpose": "any maskable"
     }],
   "id": "masjidTaqwaArabic",
   "description": "This app is great for teaching young children Arabic vocabulary.",
