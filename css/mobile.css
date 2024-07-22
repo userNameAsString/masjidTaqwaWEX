@@ -6,7 +6,7 @@ html {
     z-index: 100;
     position: fixed;
     top:0%;
-    width: 100%;
+    width: 100vw;
   }
 
   #mainTitle{
@@ -212,6 +212,7 @@ h1{
 }
 
 #quizBox{
+  right: 0px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -227,7 +228,7 @@ h1{
 }
 
 .multipleChoiceButton{
-  width: 94vw;
+  width: 97vw;
   transition: 0.3s;
   height: 12vh;
   border: none;
