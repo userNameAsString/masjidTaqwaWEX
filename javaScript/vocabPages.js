@@ -88,6 +88,7 @@ function sleep(ms) {
 
 
 function quiz(){
+    var quizTerminated = false;
     const quizButton = document.getElementById("quizButton");
     const quizBox = document.getElementById("quizBox");
     quizBox.className = "lockScroll";
@@ -106,6 +107,7 @@ function quiz(){
     finishButton.id = "finishButton";
     finishButton.textContent = "Finish";
     finishButton.onclick = function(){
+        quizTerminated = true;
         quizBox.className = "";
         quizBox.innerHTML = "";
         quizBox.appendChild(quizButton);
@@ -115,6 +117,9 @@ function quiz(){
     const lastThreeQs = [];
     questionGenerator()
     function questionGenerator(){
+        if(quizTerminated){
+            return;
+        }
         function randomInt(minInclusive,maxInclusive){
             return Math.floor(Math.random() * (maxInclusive - minInclusive + 1) ) + minInclusive;
         }
