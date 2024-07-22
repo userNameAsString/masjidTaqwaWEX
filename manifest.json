@@ -7,7 +7,7 @@
   "scope": "https://masjid-taqwa.netlify.app/",
   "short_name": "Masjid Taqwa Arabic",
   "start_url": "https://masjid-taqwa.netlify.app/",
-  "theme_color": "#c8a023",
+  "theme_color": "#040b19",
   "icons": [
     {
       "src": "manifestIcons/16.png",
@@ -134,7 +134,7 @@
       "src": "manifestIcons/512.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "manifestIcons/1024.png",
@@ -143,7 +143,7 @@
       "purpose": "any maskable"
     }],
   "id": "masjidTaqwaArabic",
-  "description": "This app is great for teaching young children Arabic vocabulary.",
+  "description": "Masjid Taqwa's official app to help students learn Arabic vocabulary",
   "lang": "en",
   "display_override": [
     "standalone",
@@ -151,6 +151,12 @@
     "minimal-ui",
     "window-controls-overlay",
     "browser"
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "url": "/home"
+    }
   ],
   "categories": [
     "education",
