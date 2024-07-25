@@ -114,7 +114,7 @@ function quiz(){
         quizBox.style.height = "auto";
         return;
     }
-    const lastThreeQs = [];
+    const previousQs = [];
     questionGenerator()
     function questionGenerator(){
         if(quizTerminated){
@@ -158,11 +158,12 @@ function quiz(){
         var questionVocab;
         do{
             questionVocab = vocabulary[randomInt(0,vocabulary.length - 1)]
-        }while(lastThreeQs.includes(questionVocab))
-        lastThreeQs.push(questionVocab);
-        if(lastThreeQs.length > 3){
-            lastThreeQs.shift()
+        }while(previousQs.includes(questionVocab))
+        if(previousQs.length > vocabulary.length - 2){
+            previousQs.length = 0;
+            console.log("Last question")
         }
+        previousQs.push(questionVocab);
         if(Math.random()>0.5){ //Arabic to English question
             if(questionVocab.transliteration){
                 question.textContent = `What does ${questionVocab.arabic}(${questionVocab.transliteration})  mean?`;
