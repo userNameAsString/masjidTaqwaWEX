@@ -12,86 +12,72 @@
     {
       "src": "manifestIcons/16.png",
       "type": "image/png",
-      "sizes": "16x16",
-      "purpose": "any maskable"
+      "sizes": "16x16"
     },
     {
       "src": "manifestIcons/20.png",
       "type": "image/png",
-      "sizes": "20x20",
-      "purpose": "any maskable"
+      "sizes": "20x20"
     }
     {
       "src": "manifestIcons/29.png",
       "type": "image/png",
-      "sizes": "29x29",
-      "purpose": "any maskable"
+      "sizes": "29x29"
     },
     {
       "src": "manifestIcons/32.png",
       "type": "image/png",
-      "sizes": "32x32",
-      "purpose": "any maskable"
+      "sizes": "32x32"
     },
     {
       "src": "manifestIcons/40.png",
       "type": "image/png",
-      "sizes": "40x40",
-      "purpose": "any maskable"
+      "sizes": "40x40"
     },
     {
       "src": "manifestIcons/50.png",
       "type": "image/png",
-      "sizes": "50x50",
-      "purpose": "any maskable"
+      "sizes": "50x50"
     },
     {
       "src": "manifestIcons/57.png",
       "type": "image/png",
-      "sizes": "57x57",
-      "purpose": "any maskable"
+      "sizes": "57x57"
     },
     {
       "src": "manifestIcons/58.png",
       "type": "image/png",
-      "sizes": "58x58",
-      "purpose": "any maskable"
+      "sizes": "58x58"
     },
     {
       "src": "manifestIcons/60.png",
       "type": "image/png",
-      "sizes": "60x60",
-      "purpose": "any maskable"
+      "sizes": "60x60"  
     },
     {
       "src": "manifestIcons/64.png",
       "type": "image/png",
-      "sizes": "64x64",
-      "purpose": "any maskable"
+      "sizes": "64x64"
     },
     {
       "src": "manifestIcons/72.png",
       "type": "image/png",
-      "sizes": "72x72",
-      "purpose": "any maskable"
+      "sizes": "72x72"
     },
     {
       "src": "manifestIcons/76.png",
       "type": "image/png",
-      "sizes": "76x76",
-      "purpose": "any maskable"
+      "sizes": "76x76"
     },
     {
       "src": "manifestIcons/80.png",
       "type": "image/png",
-      "sizes": "80x80",
-      "purpose": "any maskable"
+      "sizes": "80x80"
     },
     {
       "src": "manifestIcons/87.png",
       "type": "image/png",
-      "sizes": "87x87",
-      "purpose": "any maskable"
+      "sizes": "87x87"
     },
     {
       "src": "manifestIcons/100.png",
