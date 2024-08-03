@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   {
     "background_color": "#040b19",
     "dir": "auto",
@@ -164,3 +165,179 @@
       "kids"
     ]
   }
+=======
+{
+  "background_color": "#040b19",
+  "dir": "auto",
+  "display": "standalone",
+  "name": "Arabic Vocabulary Learning - Masjid Taqwa",
+  "orientation": "portrait",
+  "scope": "https://masjid-taqwa.netlify.app/",
+  "short_name": "Masjid Taqwa Arabic",
+  "start_url": "https://masjid-taqwa.netlify.app/",
+  "theme_color": "#040b19",
+  "icons": [
+    {
+      "src": "manifestIcons/16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "manifestIcons/20.png",
+      "type": "image/png",
+      "sizes": "20x20"
+    }
+    {
+      "src": "manifestIcons/29.png",
+      "type": "image/png",
+      "sizes": "29x29"
+    },
+    {
+      "src": "manifestIcons/32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "manifestIcons/40.png",
+      "type": "image/png",
+      "sizes": "40x40"
+    },
+    {
+      "src": "manifestIcons/50.png",
+      "type": "image/png",
+      "sizes": "50x50"
+    },
+    {
+      "src": "manifestIcons/57.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "manifestIcons/58.png",
+      "type": "image/png",
+      "sizes": "58x58"
+    },
+    {
+      "src": "manifestIcons/60.png",
+      "type": "image/png",
+      "sizes": "60x60"  
+    },
+    {
+      "src": "manifestIcons/64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "manifestIcons/72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "manifestIcons/76.png",
+      "type": "image/png",
+      "sizes": "76x76"
+    },
+    {
+      "src": "manifestIcons/80.png",
+      "type": "image/png",
+      "sizes": "80x80"
+    },
+    {
+      "src": "manifestIcons/87.png",
+      "type": "image/png",
+      "sizes": "87x87"
+    },
+    {
+      "src": "manifestIcons/100.png",
+      "type": "image/png",
+      "sizes": "100x100",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "manifestIcons/114.png",
+      "type": "image/png",
+      "sizes": "114x114",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "manifestIcons/120.png",
+      "type": "image/png",
+      "sizes": "120x120",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "manifestIcons/128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "manifestIcons/144.png",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "manifestIcons/152.png",
+      "type": "image/png",
+      "sizes": "152x152",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "manifestIcons/167.png",
+      "type": "image/png",
+      "sizes": "167x167",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "manifestIcons/180.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "manifestIcons/192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "manifestIcons/256.png",
+      "type": "image/png",
+      "sizes": "256x256",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "manifestIcons/512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "manifestIcons/1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any maskable"
+    }],
+  "id": "masjidTaqwaArabic",
+  "description": "Masjid Taqwa's official app to help students learn Arabic vocabulary",
+  "lang": "en",
+  "display_override": [
+    "standalone",
+    "fullscreen",
+    "minimal-ui",
+    "window-controls-overlay",
+    "browser"
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "url": "/home"
+    }
+  ],
+  "categories": [
+    "education",
+    "kids"
+  ]
+}
+>>>>>>> 90d2c1c75a3711f529feb8be366f6ca2cc8d0329
