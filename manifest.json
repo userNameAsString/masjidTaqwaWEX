@@ -134,7 +134,13 @@
         "src": "manifestIcons/512.png",
         "type": "image/png",
         "sizes": "512x512",
-        "purpose": "any maskable"
+        "purpose": "any"
+      },
+      {
+        "src": "manifestIcons/512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "maskable"
       },
       {
         "src": "manifestIcons/1024.png",
